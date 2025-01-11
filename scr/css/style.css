@@ -1,0 +1,491 @@
+ body {
+    margin: 0;
+    padding: 0;
+
+ }
+
+ @font-face {
+    font-family: 'Circular Std Black';
+    src: url(../assets/circular-std/CircularStd-Black.ttf)
+ }
+
+ @font-face {
+    font-family: 'Circular Std Bold';
+    src: url(../assets/circular-std/CircularStd-Bold.ttf)
+ }
+
+ @font-face {
+    font-family: 'Circular Std book';
+    src: url(../assets/circular-std/CircularStd-Book.ttf)
+ }
+
+ @font-face {
+    font-family: 'Circular Std Medium';
+    src: url(../assets/circular-std/CircularStd-Medium.ttf)
+ }
+
+ .pagina {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .fundo-preto {
+    background-color: #000000;
+ }
+
+ .fundo-degrade {
+    background: linear-gradient(180deg, #3333A3 5%, #121212 12%);
+
+ }
+
+ .centro {
+   display: flex;
+   flex: 3.5;
+   flex-direction: column
+ }
+ 
+ .centro-degrade {
+   padding-bottom: 3.5rem;
+ }
+
+ .centro-preto {
+   height: 100vh;
+   display: flex;
+   flex: 3.5;
+   flex-direction: column;
+   align-items: center;
+   gap: 3.125rem;
+ }
+
+ .esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    max-width: 19.375rem;
+    gap: 3rem;
+    padding-left: 1.87rem;
+    padding-right: 1.87rem;
+    gap: 124.4rem;
+ }
+
+ .direita {
+   display: flex;
+   flex-direction: column;
+   flex: 1; 
+   gap: 1rem;
+
+ }
+
+ .texto-branco {
+    color: #ffffff;
+ }
+
+
+ .texto-preto {
+    color: #000000;
+ }
+
+
+ .texto-cinza {
+    color: #B3B3B3;
+ }
+
+ .componente-see-all {
+   color: #adadad;
+   font-size: 1rem;
+   font-family: 'Circular Std Bold';
+ }
+
+ .texto-categoria {
+   font-family: 'Circular Std Bold';
+   font-size: 1.8rem;
+ }
+
+ .texto-mix {
+   font-family: 'Circular Std Bold';
+   font-size: 1.25rem;   
+ }
+
+ .texto-menu {
+   font-family: 'Circular Std Bold';
+   font-size: 1.1rem;
+   color: #adadad;
+ }
+
+ .texto-usuario {
+   font-family: 'Circular Std Bold';
+   font-size: 1.1rem;
+   color: #ffffff;
+ }
+
+ .icon-menu {
+   width: 2rem;
+   height: 2rem;
+ }
+
+ .menu {
+   width: 310px;
+   height: 359px;
+   display: flex;
+   flex-direction: column;
+   text-decoration: none;
+   list-style: none;
+   gap: 1.5rem;
+   margin-top: 4.37rem;
+   font-size: 1.1rem;
+ }
+
+ .nav-item {
+   display: flex;
+   flex-direction: row;
+   width: 14.5rem;
+   height: 2rem;
+   align-items: center;
+   align-content: center;
+   gap: 1.25rem;
+ }
+
+ .nav-item:hover {
+   cursor: pointer;
+ }
+
+ .nav-item a {
+   text-decoration: none;
+   gap: 1rem;
+ }
+
+ .separador {
+   height: 1px;
+   background-color: #282828;
+ }
+
+ .menu-secundario {
+   width: 16rem;
+   height: 21.18rem;
+   gap: 1.1rem;
+ }
+
+ .menu-secundario-item {
+   list-style: none;
+   text-decoration: none;
+   gap: 1.1rem;
+   display: flex;
+   flex-direction: row;
+   margin-top: 0.3rem;
+   padding-top: 1rem;
+ }
+ 
+ .menu-secundario-item a {
+   text-decoration: none;
+ }
+
+ .play-it-safe {
+   width: 19.37rem;
+   height: 19.37rem;
+   display: flex;
+   flex-direction: row;
+ }
+
+ .topo {
+   display: flex;
+   height: 5rem;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 2.56rem;
+   padding-right: 2.56rem;
+
+ }
+
+ .topo-esquerda {
+  display: flex;
+  gap: 1.37rem;
+ }
+
+ .botao-perfil {
+   width: 11.8rem;
+   height: 2.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 2.56rem;
+   border-radius: 2.5rem;
+   border: none;
+   gap: 1rem;
+ }
+
+ .saldacao {
+   margin-top: 1.87rem;
+   margin-left: 2.56rem;
+   font-family: 'Circular Std Bold';
+   font-size: 2.43rem;
+ }
+
+ .mix-musical {
+   margin-top: 2rem;
+   gap: 1.5rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-content: center;
+   flex-wrap: wrap;
+   padding-left: 1rem;
+
+ }
+
+ .mix {
+   width: 25rem;
+   height: 5.12rem;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 0.6rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+   gap: 1rem;
+ }
+ .mix img {
+   border-radius: 4px;
+ }
+
+ .lista-playlists {
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .playlists-sugeridas {
+   width: 61.813rem;
+   height: 24.25rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.625rem;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 3.125rem;
+   margin-bottom: 3.125rem;
+ }
+ 
+ .topo-campo {
+   width: 61.813rem;
+   height: 2.375rem;
+   display: flex;
+   flex-direction: row;
+   align-items:center;
+   align-content: center;
+   gap: 43rem;
+ }
+
+ .ver-tudo {
+   font-family: 'Circular Std Bold';
+   font-size: 1rem;
+   color: #adadad;
+ }
+
+ .icones-campo {
+   width: 61.813rem;
+   height: 20.25rem;
+   gap: 1.938rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-content: center;
+   padding-left: 0.6rem;
+ }
+
+ .album {
+   width: 14rem;
+   height: 20.25rem;
+   background-color: rgb(30, 30, 36);
+   display: flex;
+   flex-direction: column;
+   border-radius: 8px;
+ }
+
+ .titulo-album {
+   margin-top: 1.25rem;
+   margin-left: 1.313rem;
+   flex-wrap: nowrap;
+   font-family: 'Circular Std Bold';
+   font-size: 1.25rem;
+ }
+
+ .album img {
+   width: 11.375rem;
+   height: 11.375rem;
+   margin-top: 1.25rem;
+   margin-left: 1.313rem;
+   border-radius: 4px; 
+ }
+
+ .artistas {
+   font-family: 'Circular Std Medium';
+   font-size: 1.1rem;
+   width: 450;
+   line-height: 22.77px;
+   margin-left: 1.313rem;
+ }
+
+ .topo-direita {
+   display: flex;
+   flex-direction: row;
+   height: 5rem;
+   align-items: center;
+ }
+ 
+ .amigos {
+   font-family: 'Circular Std Bold';
+   font-size: 1.25rem;
+   font-weight: 700;
+   flex: 2.5;
+   padding-left: 1rem;
+ }
+
+ .usuario-plus {
+   width: 2rem;
+   height: 2rem;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   flex: 0.5;
+   
+ }
+
+ .sair {
+   width: 2rem;
+   height: 2rem;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   flex: 0.5;
+ }
+
+ .texto-amigos {
+   font-family: "Circular Std Medium";
+   font-weight: 100;
+   font-size: 18px;
+   margin-left: 1.25rem;
+   line-height: 24px;
+   color: rgba(204, 204, 204, 1);
+   height: 3rem;
+ }
+
+ .usuarios-amigos {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   margin-left: 1.25rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+ }
+
+ .usuarios-amigos img {
+   width: 11.188rem;
+   height: 3.875rem;
+ }
+
+ .texto-configuracoes {
+   font-family: "Circular Std Medium";
+   font-weight: 100;
+   font-size: 18px;
+   margin-left: 1.25rem;
+   line-height: 24px;
+   color: rgba(204, 204, 204, 1);
+   height: 3rem;
+   padding-top: 1rem;
+ }
+
+ .configuracoes {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-content: center;
+   margin-top: 1.5rem;
+   padding-left: 7rem;
+ 
+ }
+ .botao-configuracoes {
+   width: 233px;
+   height: 62px;
+   gap: 0px;
+   border-radius: 40px ;
+   font-family: "Circular Std Bold";
+   font-size: 18px;
+   font-weight: 200;
+   letter-spacing: 14%;
+   align-items: center;
+   margin-top: 1rem;
+
+ }
+
+ footer {
+   height: 7rem;
+   background-color: #121212;
+   color: #ffffff;
+   display: flex;
+   flex: 1;
+   flex-direction: row;
+ }
+
+ .footer-lado-esquerdo {
+   display: flex;
+   flex-direction: row;
+   flex: 1;
+   align-items: center;
+   margin-left: 1.2rem;
+   gap: 1rem;
+ }
+
+ .musica-atual {
+   font-family: "Circular Std Medium";
+   font-size: 18px;
+   font-weight: 450;
+   line-height: 22.77px;
+   text-align: left;
+   color: rgba(255, 255, 255, 1);
+ }
+
+ .artista-atual {
+   font-family: "Circular Std Medium";
+   font-size: 16px;
+   font-weight: 450;
+   line-height: 20.24px;
+   letter-spacing: -0.05em;
+   text-align: left;
+   color: rgba(179, 179, 179, 1);
+
+
+ }
+
+ .footer-centro {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 4;
+   gap: 1rem;
+ }
+
+ .controles-player {
+   display: flex;
+   flex-direction: row;
+   gap: 1.375rem;
+ }
+
+ .footer-lado-direito {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-content: center;
+   flex: 1;
+ }
+ 
+ .controles-secundarios {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-self: center;
+   gap: 0.5rem;
+   margin-left: 4rem;
+ }
+
