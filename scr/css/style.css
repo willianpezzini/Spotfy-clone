@@ -64,9 +64,12 @@
     flex: 1;
     max-width: 19.375rem;
     gap: 3rem;
-    padding-left: 1.87rem;
-    padding-right: 1.87rem;
-    gap: 124.4rem;
+
+ }
+
+ .parte-esquerda {
+   padding-left: 1.87rem;
+   padding-right: 1.87rem;
  }
 
  .direita {
@@ -180,11 +183,17 @@
    text-decoration: none;
  }
 
- .play-it-safe {
-   width: 19.37rem;
-   height: 19.37rem;
+ .foto-musica-atual {
+   height: 100%;
+   width: 310px;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
+   justify-content: flex-end;
+ }
+
+ .foto-musica-atual img {
+   height: 310px;
+   width: 310px;
  }
 
  .topo {
